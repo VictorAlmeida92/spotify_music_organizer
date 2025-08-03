@@ -31,7 +31,7 @@ Este projeto é um script Python que se conecta à sua conta do Spotify, lê sua
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/spotify-genre-organizer.git
+git clone https://github.com/victoralmeida92/spotify-music-organizer.git
 cd spotify-genre-organizer
 ```
 
@@ -56,7 +56,7 @@ SPOTIPY_REDIRECT_URI="http://127.0.0.1:8888/callback"
 Para rodar o script de organização de músicas:
 
 ```bash
-python src/app/interface/cli/main.py
+python3 -m app.main
 ```
 
 Ao executar, você será redirecionado para autenticar na sua conta do Spotify e autorizar o app.

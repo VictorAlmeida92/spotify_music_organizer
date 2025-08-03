@@ -1,3 +1,5 @@
+from typing import List
+
 GENRE_MAP = {
     'pop': 'Pop',
     'k-pop': 'Pop',
@@ -28,8 +30,10 @@ GENRE_MAP = {
     'edm': 'Eletrônica',
 }
 
-def normalize_genre(genre: str) -> str:
-    genre_lower = genre.lower()
+def normalize_genre(genres: List[str]) -> str:
+    if not genres:
+        return "Outros"
+    genre_lower = genres[0].lower()
     for key, value in GENRE_MAP.items():
         if key in genre_lower:
             return value
